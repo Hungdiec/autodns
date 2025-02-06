@@ -37,15 +37,15 @@ curl -sSL https://github.com/yourusername/yourrepo/archive/refs/heads/main.tar.g
 - **Updates the package list and installs Python3, pip3, and the requests library.**
 - **Prompts for Configuration:**
 - **Asks you for your NPM API URL, user, password, Cloudflare API token, Zone ID, and server IP/hostname.**
-#Creates Configuration File:
-#Writes your configuration values to config.py.
-#Sets Up Systemd Service and Timer:
-#Creates and installs the systemd service (npm_proxy_update.service) and timer (npm_proxy_update.timer) files. The service runs the update script every 5 seconds.
-#Enables and Starts the Timer:
-#Reloads the systemd daemon, enables, and starts the timer so that the update process begins automatically.
+- **Creates Configuration File:**
+- **Writes your configuration values to config.py.**
+- **Sets Up Systemd Service and Timer:**
+- **Creates and installs the systemd service (npm_proxy_update.service) and timer (npm_proxy_update.timer) files. The service runs the update script every 5 seconds.**
+- **Enables and Starts the Timer:**
+- **Reloads the systemd daemon, enables, and starts the timer so that the update process begins automatically.**
 
 ## Configuration
-During installation, you will be prompted for the following configuration values:
+**During installation, you will be prompted for the following configuration values:**
 
 NPM API URL:
 e.g., https://proxy.hung99.com/api
