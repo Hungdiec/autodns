@@ -22,29 +22,29 @@ npm-proxy-cloudflare/
 ├── uninstall.sh           # Uninstaller script to remove the service and configuration
 └── README.md              # This documentation file
 ```
-Requirements
+##Requirements
 Ubuntu (or another systemd-enabled Linux distribution)
 Python 3 and pip3
 The Python requests library (installed via pip)
 
-Installation
+##Installation
 You can install the project with one command by cloning the repository and running the installer script. For example:
 ```bash
 curl -sSL https://github.com/yourusername/yourrepo/archive/refs/heads/main.tar.gz | tar -xz && cd yourrepo-main && ./install.sh
 ```
-What the Installer Does
-Installs Dependencies:
-Updates the package list and installs Python3, pip3, and the requests library.
-Prompts for Configuration:
-Asks you for your NPM API URL, user, password, Cloudflare API token, Zone ID, and server IP/hostname.
-Creates Configuration File:
-Writes your configuration values to config.py.
-Sets Up Systemd Service and Timer:
-Creates and installs the systemd service (npm_proxy_update.service) and timer (npm_proxy_update.timer) files. The service runs the update script every 5 seconds.
-Enables and Starts the Timer:
-Reloads the systemd daemon, enables, and starts the timer so that the update process begins automatically.
+##What the Installer Does
+#Installs Dependencies:
+#Updates the package list and installs Python3, pip3, and the requests library.
+#Prompts for Configuration:
+#Asks you for your NPM API URL, user, password, Cloudflare API token, Zone ID, and server IP/hostname.
+#Creates Configuration File:
+#Writes your configuration values to config.py.
+#Sets Up Systemd Service and Timer:
+#Creates and installs the systemd service (npm_proxy_update.service) and timer (npm_proxy_update.timer) files. The service runs the update script every 5 seconds.
+#Enables and Starts the Timer:
+#Reloads the systemd daemon, enables, and starts the timer so that the update process begins automatically.
 
-Configuration
+##Configuration
 During installation, you will be prompted for the following configuration values:
 
 NPM API URL:
@@ -61,7 +61,7 @@ Server IP or Hostname:
 The IP or hostname to be used as the CNAME record content.
 These values are saved in the config.py file (generated during installation) and are used by listhostpython.py.
 
-Running the Service
+##Running the Service
 After installation, the systemd timer will automatically trigger the service every 5 seconds. To check the status of the timer or service, use the following commands:
 ```bash
 # Check timer status
@@ -73,19 +73,19 @@ sudo systemctl status npm_proxy_update.service
 # View logs for the service
 sudo journalctl -u npm_proxy_update.service -f
 ```
-Uninstallation
+##Uninstallation
 To uninstall the service and remove the generated configuration file, run the provided uninstaller:
 ```bash
 sudo bash uninstall.sh
 ```
-The uninstaller will:
+#The uninstaller will:
 
-Stop and disable the systemd timer and service.
-Remove the systemd unit files from /etc/systemd/system/.
-Reload the systemd daemon.
-Remove the generated config.py file.
-License
-Include your project's license information here.
+#Stop and disable the systemd timer and service.
+#Remove the systemd unit files from /etc/systemd/system/.
+#Reload the systemd daemon.
+#Remove the generated config.py file.
+##License
+#Include your project's license information here.
 
-Contributing
-If you want to contribute, please fork the repository and create a pull request with your improvements.
+##Contributing
+#If you want to contribute, please fork the repository and create a pull request with your improvements.
