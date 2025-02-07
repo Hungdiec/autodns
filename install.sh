@@ -75,3 +75,5 @@ sudo systemctl enable ddns.timer
 sudo systemctl start ddns.timer
 
 echo "Installation complete. The service is scheduled to run every 5 seconds via systemd timer."
+echo "systemctl status ddns.service    to see service status"
+echo "sudo journalctl -u ddns.service -f      to see service log"
