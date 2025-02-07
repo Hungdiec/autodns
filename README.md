@@ -30,7 +30,7 @@ npm-proxy-cloudflare/
 ## Installation
 You can install the project with one command by cloning the repository and running the installer script. For example:
 ```bash
-curl -sSL https://github.com/yourusername/yourrepo/archive/refs/heads/main.tar.gz | tar -xz && cd yourrepo-main && sudo bash ./install.sh
+curl -sSL https://github.com/Hungdiec/autodns/archive/refs/heads/main.tar.gz | tar -xz && cd autodns-main && sudo bash ./install.sh
 ```
 ## What the Installer Does
 - **Installs Dependencies**:
