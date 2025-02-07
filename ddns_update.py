@@ -15,7 +15,7 @@ SERVER_IP_OR_HOSTNAME = config.SERVER_IP_OR_HOSTNAME
 
 def get_npm_token():
     """Gets an API token from NPM."""
-    url = f"{NPM_API_URL}/tokens"
+    url = f"{NPM_API_URL}/api/tokens"
     data = {"identity": NPM_API_USER, "secret": NPM_API_PASS}
     response = requests.post(url, json=data)
     response.raise_for_status()
@@ -23,7 +23,7 @@ def get_npm_token():
 
 def get_proxy_hosts(token):
     """Gets the list of proxy hosts from NPM."""
-    url = f"{NPM_API_URL}/nginx/proxy-hosts"
+    url = f"{NPM_API_URL}/api/nginx/proxy-hosts"
     headers = {"Authorization": f"Bearer {token}"}
     response = requests.get(url, headers=headers)
     response.raise_for_status()
