@@ -47,18 +47,12 @@ curl -sSL https://github.com/yourusername/yourrepo/archive/refs/heads/main.tar.g
 ## Configuration
 **During installation, you will be prompted for the following configuration values:**
 
-- **NPM API URL:**
-- **e.g., https://proxy.hung99.com/api**
-- **NPM API User:**
-- **Your NPM API username/email.**
-- **NPM API Password:**
-- **Your NPM API password.**
+- **NPM API URL:[http://ipadress:81/api]**
+- **NPM API User:[email đăng nhập npm]**
+- **NPM API Password:[mật khẩu đăng nhập]**
 - **Cloudflare API Token:**
-- **Your Cloudflare API token.**
 - **Cloudflare Zone ID:**
-- **Your Cloudflare zone ID.**
 - **Server IP or Hostname:**
-- **The IP or hostname to be used as the CNAME record content.**
 - **These values are saved in the config.py file (generated during installation) and are used by listhostpython.py.**
 
 ## Running the Service
