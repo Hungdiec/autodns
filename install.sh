@@ -5,8 +5,8 @@ echo "Welcome to the NPM Proxy & Cloudflare DNS Update Service Installer."
 echo "Please provide the following configuration values."
 
 # Prompt for configuration values, with defaults where applicable
-read -p "Enter NPM API URL (default: https://proxy.hung99.com/api): " NPM_API_URL
-NPM_API_URL=${NPM_API_URL:-"https://proxy.hung99.com/api"}
+read -p "Enter NPM API URL (default: http://127.0.0.1): " NPM_API_URL
+NPM_API_URL=${NPM_API_URL:-"http://127.0.0.1"}
 
 read -p "Enter NPM API user: " NPM_API_USER
 read -p "Enter NPM API password: " NPM_API_PASS
