@@ -23,9 +23,9 @@ npm-proxy-cloudflare/
 └── README.md              # This documentation file
 ```
 ## Requirements
-Ubuntu (or another systemd-enabled Linux distribution)
-Python 3 and pip3
-The Python requests library (installed via pip)
+- **Ubuntu (or another systemd-enabled Linux distribution)**
+- **Python 3 and pip3**
+- **The Python requests library (installed via pip)**
 
 ## Installation
 You can install the project with one command by cloning the repository and running the installer script. For example:
